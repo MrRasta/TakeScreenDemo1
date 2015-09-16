@@ -24,5 +24,15 @@ namespace ScreenDemo1
         {
             InitializeComponent();
         }
+
+        private void BtnMin_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void BtnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

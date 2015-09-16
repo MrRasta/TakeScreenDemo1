@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button Name="BtnClose" Content="x" HorizontalAlignment="Left" Margin="486,10,0,0" VerticalAlignment="Top" Width="20" Click="BtnClose_Click"/>
+        <Button Name="BtnMin" Content="_" HorizontalAlignment="Left" Margin="461,10,0,0" VerticalAlignment="Top" Width="20" Click="BtnMin_Click"/>
     </Grid>
 </Window>
