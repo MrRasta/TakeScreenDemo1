@@ -1,1 +1,1 @@
-# TakeScreenDemo1
+Demo application to take screenshots
