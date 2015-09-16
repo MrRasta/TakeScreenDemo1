@@ -2,8 +2,11 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}">
         <Button Name="BtnClose" Content="x" HorizontalAlignment="Left" Margin="486,10,0,0" VerticalAlignment="Top" Width="20" Click="BtnClose_Click"/>
         <Button Name="BtnMin" Content="_" HorizontalAlignment="Left" Margin="461,10,0,0" VerticalAlignment="Top" Width="20" Click="BtnMin_Click"/>
+        <Image Name="Img"  HorizontalAlignment="Left" Height="149" Margin="10,10,0,0" VerticalAlignment="Top" Width="267"/>
+        <Button Name="BtnTakeScreen" Content="Take screen" HorizontalAlignment="Left" Margin="432,110,0,0" VerticalAlignment="Top" Width="75" Click="BtnTakeScreen_Click"/>
+        <Button Name="BtnSave" Content="Save" IsEnabled="False" HorizontalAlignment="Left" Margin="432,141,0,0" VerticalAlignment="Top" Width="75" Click="BtnSave_Click"/>
     </Grid>
 </Window>
