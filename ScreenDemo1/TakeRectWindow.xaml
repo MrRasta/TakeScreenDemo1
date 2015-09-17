@@ -7,7 +7,11 @@
         AllowsTransparency="True" 
         Background="Black"
         PreviewMouseDown="Window_MouseDown" 
-        PreviewMouseMove="Window_MouseMove">
+        PreviewMouseMove="Window_MouseMove"
+        Topmost="True"
+        ShowActivated="True"
+        ShowInTaskbar="False"
+        Closing="TakeRectWindow_OnClosing">
     <Canvas x:Name="CanvasRect" />
     
 </Window>

@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using Microsoft.Win32;
 using Size = System.Drawing.Size;
 
@@ -66,8 +67,10 @@ namespace ScreenDemo1
 
         private void BtnTakeRectangle_Click(object sender, RoutedEventArgs e)
         {
+            WindowState = WindowState.Minimized;
             
             Image rect = TakeRectWindow.GetRectangle();
+
             if (rect != null)
             {
                 Img.Source = Converters.ConvertToImageSource(rect);
@@ -75,6 +78,8 @@ namespace ScreenDemo1
 
                 BtnSave.IsEnabled = true;
             }
+
+            WindowState = WindowState.Normal;
         }
     }
 }

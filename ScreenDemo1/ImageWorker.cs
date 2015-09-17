@@ -21,7 +21,7 @@ namespace ScreenDemo1
             Graphics g = Graphics.FromImage(image);
             g.CompositingQuality = CompositingQuality.HighQuality;
             g.CopyFromScreen(ix, iy, 0, 0, new Size(Math.Abs(iw), Math.Abs(ih)), CopyPixelOperation.SourceCopy);
-          
+       
             return image;
         }
 
