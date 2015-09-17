@@ -63,9 +63,27 @@ namespace ScreenDemo1.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Save.
         /// </summary>
-        public static string btnSaveText {
+        public static string BtnSaveText {
             get {
-                return ResourceManager.GetString("btnSaveText", resourceCulture);
+                return ResourceManager.GetString("BtnSaveText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take Rectangle.
+        /// </summary>
+        public static string BtnTakeRectangleText {
+            get {
+                return ResourceManager.GetString("BtnTakeRectangleText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take all screen.
+        /// </summary>
+        public static string BtnTakeScreenText {
+            get {
+                return ResourceManager.GetString("BtnTakeScreenText", resourceCulture);
             }
         }
     }
